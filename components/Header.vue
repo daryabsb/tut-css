@@ -13,80 +13,7 @@
   </header>
 </template>
 
-<style>
-.header {
-  height: 95vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(126, 213, 111, 0.8),
-      rgba(40, 180, 131, 0.8)
-    ),
-    url(~assets/img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
-
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-
-.header__logo {
-  height: 3.5rem;
-}
-
-/* .logo:hover {
-  animation: moveInLeft 1s ease-out;
-} */
-
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem;
-}
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-
-  animation: moveInLeft 1s ease-out;
-  /*
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-delay: 2s;
-  animation-iteration-count: 2;
-  */
-}
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 300;
-  letter-spacing: 1.75rem;
-
-  animation: moveInRight 1s ease-out;
-
-  /*
-  animation-name: moveInRight;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-delay: 2s;
-  animation-iteration-count: 2;
-  */
-}
-
+<style lang="scss">
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -131,6 +58,82 @@
   }
 }
 
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 131, 0.8)
+    ),
+    url(~assets/img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+/* .logo:hover {
+  animation: moveInLeft 1s ease-out;
+} */
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    animation: moveInLeft 1s ease-out;
+    /*
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+  */
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 1.75rem;
+
+    animation: moveInRight 1s ease-out;
+
+    /*
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+  animation-iteration-count: 2;
+  */
+  }
+}
+
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -145,15 +148,15 @@
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
 }
 .btn:active {
   transform: translateY(-0.1rem);
-  box-shadow: 0 0.6rem 0.1rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.6rem 0.1rem rgba($color-black, 0.05);
 }
 .btn--white {
-  background-color: #fff;
-  color: #777;
+  background-color: $color-white;
+  color: $color-grey;
 }
 .btn::after {
   content: "";
