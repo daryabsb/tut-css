@@ -1,21 +1,34 @@
 <template>
-  <nav>
-    <ul class="navigation">
-      <li>
-        <a href="#">About us</a>
-      </li>
-      <li>
-        <a href="#">Pricing</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-    <div class="buttons">
-      <a class="btn-main" href="#">Sign up</a>
-      <a class="btn-hot" href="#">Get a quote</a>
+  <section class="grid-test">
+    <div class="row">
+      <div class="col-1-of-2">Col 1 of 2</div>
+      <div class="col-1-of-2">Col 1 of 2</div>
     </div>
-  </nav>
+    <div class="row">
+      <div class="col-1-of-3">Col 1 of 3</div>
+      <div class="col-1-of-3">Col 1 of 3</div>
+      <div class="col-1-of-3">Col 1 of 3</div>
+    </div>
+    <div class="row">
+      <div class="col-1-of-3">Col 1 of 3</div>
+      <div class="col-2-of-3">Col 2 of 3</div>
+    </div>
+    <div class="row">
+      <div class="col-1-of-4">Col 1 of 4</div>
+      <div class="col-1-of-4">Col 1 of 4</div>
+      <div class="col-1-of-4">Col 1 of 4</div>
+      <div class="col-1-of-4">Col 1 of 4</div>
+    </div>
+    <div class="row">
+      <div class="col-1-of-4">Col 1 of 4</div>
+      <div class="col-1-of-4">Col 1 of 4</div>
+      <div class="col-2-of-4">Col 2 of 4</div>
+    </div>
+    <div class="row">
+      <div class="col-1-of-4">Col 1 of 4</div>
+      <div class="col-3-of-4">Col 3 of 4</div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -23,96 +36,49 @@ export default {};
 </script>
 
 <style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-}
-$color-primary: #f9ed69; // Yellow
-$color-secondary: #f08a5d; // Orange
-$color-tertiary: #b83b5e; //pink
-$color-text-dark: #333;
-$color-text-light: #eee;
+.row {
+  max-width: $grid-width;
+  background-color: $color-text-light;
+  margin: 0 auto;
 
-$width-button: 150px;
-
-@mixin clearfix {
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
   }
-}
-
-@mixin style-link-text($color) {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $color;
-}
-
-@function devide($a, $b) {
-  @return $a / $b;
-}
-
-nav {
-  margin: 30px;
-  background-color: $color-primary;
 
   @include clearfix;
-}
 
-.navigation {
-  list-style: none;
-  float: left;
+  [class^="col-"] {
+    background-color: orangered;
+    float: left;
 
-  li {
-    display: inline-block;
-    margin-left: 30px;
-
-    &:first-child {
-      margin: 0;
-    }
-
-    a:any-link {
-      @include style-link-text($color-text-dark);
+    &:not(:last-child) {
+      margin-right: $gutter-horizontal;
     }
   }
-}
-
-.buttons {
-  float: right;
-}
-
-%btn-placeholder {
-  padding: 10px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 100px;
-  width: $width-button;
-
-  @include style-link-text($color-text-light);
-}
-
-// .btn-main:any-link,
-// .btn-hot:any-link {
-// }
-
-.btn-main {
-  &:any-link {
-    @extend %btn-placeholder;
-    background-color: $color-secondary;
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) / 2);
   }
-  &:hover {
-    background-color: darken($color-secondary, 15%);
+  .col-1-of-3 {
+    width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
   }
-}
+  .col-2-of-3 {
+    width: calc(
+      2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
+    );
+  }
 
-.btn-hot {
-  &:any-link {
-    @extend %btn-placeholder;
-    background-color: $color-tertiary;
+  .col-1-of-4 {
+    width: calc((100% - (3 * #{$gutter-horizontal})) / 4);
   }
-  &:hover {
-    background-color: lighten($color-tertiary, 10%);
+  .col-2-of-4 {
+    width: calc(
+      2 * ((100% - (3 * #{$gutter-horizontal})) / 4) + #{$gutter-horizontal}
+    );
+  }
+  .col-3-of-4 {
+    width: calc(
+      3 * ((100% - (3 * #{$gutter-horizontal})) / 4) + 2 * #{$gutter-horizontal}
+    );
   }
 }
 </style>

@@ -14,56 +14,12 @@
 </template>
 
 <style lang="scss">
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-
-  80% {
-    transform: translateX(1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-
-  80% {
-    transform: translateX(-1rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes moveInTop {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .header {
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(126, 213, 111, 0.8),
-      rgba(40, 180, 131, 0.8)
+      rgba($color-secondary, 0.8),
+      rgba($color-primary-dark, 0.8)
     ),
     url(~assets/img/hero.jpg);
   background-size: cover;
@@ -94,92 +50,56 @@
   animation: moveInLeft 1s ease-out;
 } */
 
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem;
-
-  &--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-
-    animation: moveInLeft 1s ease-out;
-    /*
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-delay: 2s;
-  animation-iteration-count: 2;
-  */
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    font-size: 1.6rem;
   }
 
-  &--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 300;
-    letter-spacing: 1.75rem;
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
 
-    animation: moveInRight 1s ease-out;
-
-    /*
-  animation-name: moveInRight;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  animation-delay: 2s;
-  animation-iteration-count: 2;
-  */
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
   }
-}
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.6rem 0.1rem rgba($color-black, 0.05);
+  }
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
 
-.btn:link,
-.btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  display: inline-block;
-  border-radius: 10rem;
-  transition: all 0.2s;
-  position: relative;
-  font-size: 1.6rem;
-}
+    &::after {
+      background-color: $color-white;
+    }
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
 
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
-}
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0 0.6rem 0.1rem rgba($color-black, 0.05);
-}
-.btn--white {
-  background-color: $color-white;
-  color: $color-grey;
-}
-.btn::after {
-  content: "";
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  border-radius: 10rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
-.btn--white::after {
-  background-color: #fff;
-}
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
-.btn--animated {
-  animation: moveInTop 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
+  &--animated {
+    animation: moveInTop 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
 }
 </style>
