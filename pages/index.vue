@@ -1,34 +1,11 @@
 <template>
-  <section class="grid-test">
-    <div class="row">
-      <div class="col-1-of-2">Col 1 of 2</div>
-      <div class="col-1-of-2">Col 1 of 2</div>
-    </div>
-    <div class="row">
-      <div class="col-1-of-3">Col 1 of 3</div>
-      <div class="col-1-of-3">Col 1 of 3</div>
-      <div class="col-1-of-3">Col 1 of 3</div>
-    </div>
-    <div class="row">
-      <div class="col-1-of-3">Col 1 of 3</div>
-      <div class="col-2-of-3">Col 2 of 3</div>
-    </div>
-    <div class="row">
-      <div class="col-1-of-4">Col 1 of 4</div>
-      <div class="col-1-of-4">Col 1 of 4</div>
-      <div class="col-1-of-4">Col 1 of 4</div>
-      <div class="col-1-of-4">Col 1 of 4</div>
-    </div>
-    <div class="row">
-      <div class="col-1-of-4">Col 1 of 4</div>
-      <div class="col-1-of-4">Col 1 of 4</div>
-      <div class="col-2-of-4">Col 2 of 4</div>
-    </div>
-    <div class="row">
-      <div class="col-1-of-4">Col 1 of 4</div>
-      <div class="col-3-of-4">Col 3 of 4</div>
-    </div>
-  </section>
+  <main>
+    <section class="section-about">
+      <div class="u-center-text">
+        <h2 class="heading-secondary">Exciting tour for adventurer people</h2>
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -36,49 +13,9 @@ export default {};
 </script>
 
 <style lang="scss">
-.row {
-  max-width: $grid-width;
-  background-color: $color-text-light;
-  margin: 0 auto;
-
-  &:not(:last-child) {
-    margin-bottom: $gutter-vertical;
-  }
-
-  @include clearfix;
-
-  [class^="col-"] {
-    background-color: orangered;
-    float: left;
-
-    &:not(:last-child) {
-      margin-right: $gutter-horizontal;
-    }
-  }
-  .col-1-of-2 {
-    width: calc((100% - #{$gutter-horizontal}) / 2);
-  }
-  .col-1-of-3 {
-    width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
-  }
-  .col-2-of-3 {
-    width: calc(
-      2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal}
-    );
-  }
-
-  .col-1-of-4 {
-    width: calc((100% - (3 * #{$gutter-horizontal})) / 4);
-  }
-  .col-2-of-4 {
-    width: calc(
-      2 * ((100% - (3 * #{$gutter-horizontal})) / 4) + #{$gutter-horizontal}
-    );
-  }
-  .col-3-of-4 {
-    width: calc(
-      3 * ((100% - (3 * #{$gutter-horizontal})) / 4) + 2 * #{$gutter-horizontal}
-    );
-  }
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
 }
 </style>
