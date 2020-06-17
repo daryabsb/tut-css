@@ -22,21 +22,18 @@
         </div>
         <div class="col-1-of-2">
           <div class="composition">
-            <h1>Darya</h1>
-          </div>
-          <div class="composition">
             <img
-              src="/img/nat-1.jpg"
+              src="/img/nat-1-large.jpg"
               alt="photo 1"
               class="composition__photo composition__photo--p1"
             />
             <img
-              src="/img/nat-2.jpg"
-              alt="photo 2"
+              src="/img/nat-2-large.jpg"
+              alt="photo 3"
               class="composition__photo composition__photo--p2"
             />
             <img
-              src="/img/nat-3.jpg"
+              src="/img/nat-3-large.jpg"
               alt="photo 3"
               class="composition__photo composition__photo--p3"
             />
