@@ -3,6 +3,7 @@
     <About />
     <Features />
     <Tours />
+    <Stories />
   </main>
 </template>
 
