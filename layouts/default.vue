@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Sidemenu />
     <Header />
     <nuxt />
     <Footer />
