@@ -1,9 +1,10 @@
 <template>
   <main>
-    <About />
-    <Features />
-    <Tours />
-    <Stories />
+    <about />
+    <features />
+    <tours />
+    <stories />
+    <booking />
   </main>
 </template>
 
