@@ -4,6 +4,7 @@
     <Header />
     <nuxt />
     <Footer />
+    <Popupwindow />
   </div>
 </template>
 <script>

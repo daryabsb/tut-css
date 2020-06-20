@@ -1,5 +1,5 @@
 <template>
-  <section class="section-tours">
+  <section class="section-tours" id="section-tours">
     <div class="u-center-text u-margin-bottom-large">
       <h2 class="heading-secondary">Most popular Tours</h2>
     </div>
@@ -27,7 +27,7 @@
                 <p class="card-tours__price-only">Only</p>
                 <p class="card-tours__price-value">$297</p>
               </div>
-              <a href="#" class="btn btn--white">Book Now!</a>
+              <a href="#popup" class="btn btn--white">Book Now!</a>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
                 <p class="card-tours__price-only">Only</p>
                 <p class="card-tours__price-value">$497</p>
               </div>
-              <a href="#" class="btn btn--white">Book Now!</a>
+              <a href="#popup" class="btn btn--white">Book Now!</a>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
                 <p class="card-tours__price-only">Only</p>
                 <p class="card-tours__price-value">$897</p>
               </div>
-              <a href="#" class="btn btn--white">Book Now!</a>
+              <a href="#popup" class="btn btn--white">Book Now!</a>
             </div>
           </div>
         </div>

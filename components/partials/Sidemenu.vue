@@ -1,7 +1,9 @@
 <template>
   <div class="navigation">
     <input class="navigation__checkbox" type="checkbox" id="navi-toggle" name="nav" />
-    <label for="navi-toggle" class="navigation__button">MENU</label>
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">&nbsp;</span>
+    </label>
     <div class="navigation__background">&nbsp;</div>
     <nav class="navigation__nav">
       <ul class="navigation__list">
@@ -47,10 +49,12 @@
     position: fixed;
     top: 6rem;
     right: 6rem;
+    text-align: center;
     // transform: translate(-50%, -50%);
     border-radius: 50%;
     z-index: 1010;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+    cursor: pointer;
   }
   &__background {
     height: 6rem;
@@ -120,12 +124,68 @@
       transform: translateX(1rem);
     }
   }
+  // Functionality
   &__checkbox:checked ~ &__background {
     transform: scale(80);
   }
   &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
+  }
+
+  // Icon
+  &__icon {
+    position: relative;
+    margin-top: 3.2rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 3rem;
+      height: 2px;
+      background-color: $color-grey-light-3;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+    &::before {
+      top: -0.8rem;
+      /* 
+      AS AN OPTION TO CHANGE CENTERPOINT =>
+       transform-origin: left;
+       */
+    }
+    &::after {
+      top: 0.8rem;
+      /* 
+      AS AN OPTION TO CHANGE CENTERPOINT =>
+      transform-origin: right;
+      */
+    }
+  }
+  &__button:hover &__icon:before {
+    top: -1rem;
+  }
+  &__button:hover &__icon:after {
+    top: 1rem;
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+  &__checkbox:checked + &__button &__icon::before {
+    transform: rotate(135deg);
+    top: 0;
+  }
+  &__checkbox:checked + &__button &__icon::after {
+    transform: rotate(-135deg);
+    top: 0;
   }
 }
 </style>
