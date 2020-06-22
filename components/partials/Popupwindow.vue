@@ -6,7 +6,7 @@
         <img src="/img/nat-9.jpg" class="popup__img" alt="Tour Photo" />
       </div>
       <div class="popup__right">
-        <a href="#section-tours" class="popup__close">&times;</a>
+        <a href="/" class="popup__close">&times;</a>
         <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
         <h3
           class="heading-tertiary u-margin-bottom-small"

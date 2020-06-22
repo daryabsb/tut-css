@@ -4,7 +4,9 @@
       <div class="topbar">
         <h4>en</h4>
       </div>
-      <div class="middlebar">logo</div>
+      <div class="middlebar">
+        <img src="~assets/img/logo-white.png" alt="logo" class="logo" />
+      </div>
       <div class="relative"></div>
     </header>
 
@@ -315,27 +317,39 @@ export default {
 </script>
 
 <style lang="scss">
+div {
+  display: block;
+}
 .wrapper {
   box-sizing: border-box;
   // position: relative;
   margin: 0;
   padding: 0;
 }
-.side-header {
+header {
+  margin-bottom: 0;
+  min-height: 55px;
 }
-.relative {
-  position: relative;
-  padding: 0;
+.side-header {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-bottom: 0;
+  min-height: 55px;
+
+  background-color: #60afdc;
+}
+.logo {
+  height: 12rem;
+  padding: 3rem 5rem;
   top: 15rem;
 }
 .topbar {
   // display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 3rem;
-  width: 100%;
-  background-color: purple;
+  color: #fff;
+  background-color: #696969;
 }
 .middlebar {
   // display: block;
@@ -344,7 +358,7 @@ export default {
   left: 0;
   height: 12rem;
   width: 100%;
-  background-color: rosybrown;
+  background-color: inherit;
 }
 .menu {
   // display: block;
