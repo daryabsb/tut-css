@@ -39,14 +39,3 @@
     </div>
   </section>
 </template>
-<style lang="scss">
-.section-about {
-  background-color: $color-grey-light-1;
-  padding: 25rem 0;
-  margin-top: -20vh;
-
-  @include respond(tab-port) {
-    padding: 20rem 0;
-  }
-}
-</style>

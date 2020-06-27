@@ -94,10 +94,3 @@
     </div>
   </section>
 </template>
-<style lang="scss">
-.section-tours {
-  background-color: $color-grey-light-1;
-  padding: 25rem 0 15rem 0;
-  margin-top: -10rem;
-}
-</style>

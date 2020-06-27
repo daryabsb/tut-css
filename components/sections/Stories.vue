@@ -40,10 +40,3 @@
     </div>
   </section>
 </template>
-<style lang="scss">
-.section-stories {
-  position: relative;
-  padding: 15rem 0;
-  // background-color: $color-grey-light-1;
-}
-</style>

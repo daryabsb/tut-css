@@ -24,9 +24,9 @@ body {
     animation-delay: 2s;
     animation-iteration-count: 2;
     */
-        @include respond(tab-port) {
+        @include respond(phone) {
             letter-spacing: 1rem;
-            font-size: 4rem;
+            font-size: 5rem;
         }
     }
     &--sub {
@@ -42,7 +42,7 @@ body {
     animation-delay: 2s;
     animation-iteration-count: 2;
     */
-        @include respond(tab-port) {
+        @include respond(phone) {
             letter-spacing: .5rem;
         }
     }
