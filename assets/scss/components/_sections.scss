@@ -60,6 +60,10 @@
         width: 33.3333333%;
         display: table-cell;
         // float: left;
+        @include respond(tab-port) {
+            width: 100%;
+            display: block;
+        }
     }
     &__right {
         width: 66.666667%;
@@ -67,10 +71,18 @@
         vertical-align: middle;
         padding: 3rem 5rem;
         // float: right;
+        @include respond(tab-port) {
+            width: 100%;
+            display: block;
+        }
     }
     &__img {
         display: block;
         width: 100%;
+        @include respond(tab-port) {
+            display: inline-block;
+            width: 49.8%;
+        }
     }
     &__text {
         font-size: 1.4rem;
