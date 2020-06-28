@@ -33,7 +33,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ["~assets/scss/all.scss", "~assets/scss/icon-font.css"],
+  css: ["~assets/nat-scss/all.scss", "~assets/nat-scss/icon-font.css"],
   /*
    ** Plugins to load before mounting the App
    */
