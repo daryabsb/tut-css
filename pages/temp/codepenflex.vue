@@ -22,19 +22,21 @@ export default {
   overflow: auto;
   background-color: #ccc;
   padding: 10px;
-  /* height: 1500px; */
+  height: 1000px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
 }
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background-color: red;
-}
+} */
 .item {
   background-color: #f1425d;
   padding: 30px;
-  margin: 30px;
+  margin: 5px;
   color: #fff;
   font-size: 40px;
   /* flex-grow: 1; */
@@ -52,7 +54,7 @@ export default {
 }
 .i4 {
   /* font-size: 90px; */
-  align-self: flex-end;
+  /* align-self: flex-end; */
   order: -1;
 }
 </style>
