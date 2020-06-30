@@ -1,0 +1,68 @@
+{
+  "Footer": {
+    "description": "Auto imported from components/partials/Footer.vue"
+  },
+  "LazyFooter": {
+    "description": "Auto imported from components/partials/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/partials/Header.vue"
+  },
+  "LazyHeader": {
+    "description": "Auto imported from components/partials/Header.vue"
+  },
+  "Popupwindow": {
+    "description": "Auto imported from components/partials/Popupwindow.vue"
+  },
+  "LazyPopupwindow": {
+    "description": "Auto imported from components/partials/Popupwindow.vue"
+  },
+  "Sidemenu": {
+    "description": "Auto imported from components/partials/Sidemenu.vue"
+  },
+  "LazySidemenu": {
+    "description": "Auto imported from components/partials/Sidemenu.vue"
+  },
+  "Test": {
+    "description": "Auto imported from components/class/test.vue"
+  },
+  "LazyTest": {
+    "description": "Auto imported from components/class/test.vue"
+  },
+  "Topbar": {
+    "description": "Auto imported from components/class/topbar.vue"
+  },
+  "LazyTopbar": {
+    "description": "Auto imported from components/class/topbar.vue"
+  },
+  "About": {
+    "description": "Auto imported from components/sections/About.vue"
+  },
+  "LazyAbout": {
+    "description": "Auto imported from components/sections/About.vue"
+  },
+  "Booking": {
+    "description": "Auto imported from components/sections/Booking.vue"
+  },
+  "LazyBooking": {
+    "description": "Auto imported from components/sections/Booking.vue"
+  },
+  "Features": {
+    "description": "Auto imported from components/sections/Features.vue"
+  },
+  "LazyFeatures": {
+    "description": "Auto imported from components/sections/Features.vue"
+  },
+  "Stories": {
+    "description": "Auto imported from components/sections/Stories.vue"
+  },
+  "LazyStories": {
+    "description": "Auto imported from components/sections/Stories.vue"
+  },
+  "Tours": {
+    "description": "Auto imported from components/sections/Tours.vue"
+  },
+  "LazyTours": {
+    "description": "Auto imported from components/sections/Tours.vue"
+  }
+}
