@@ -23,11 +23,6 @@ export default {
         rel: "stylesheet",
         // type: "text/css",
         href: "https://fonts.googleapis.com/css?family=Lato:400,300,500,600,700"
-      },
-      {
-        rel: "stylesheet",
-        type: "text/css",
-        href: "https://fonts.googleapis.com/css?family=open+sans:300,400,600"
       }
     ]
   },
