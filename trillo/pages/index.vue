@@ -1,7 +1,10 @@
 <template>
   <div class="content">
     <Sidebar />
-    <main class="hotel-view">Hotel View</main>
+    <main class="hotel-view">
+      <Gallery />
+      <Overview />
+    </main>
   </div>
 </template>
 
