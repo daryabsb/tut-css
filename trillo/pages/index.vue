@@ -4,6 +4,7 @@
     <main class="hotel-view">
       <Gallery />
       <Overview />
+      <Detail />
     </main>
   </div>
 </template>
