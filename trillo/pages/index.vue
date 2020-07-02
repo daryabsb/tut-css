@@ -5,6 +5,7 @@
       <Gallery />
       <Overview />
       <Detail />
+      <Cta />
     </main>
   </div>
 </template>
