@@ -25,7 +25,8 @@
       <button class="btn-inline">Albufeira, Portugal</button>
     </div>
     <div class="overview__rating">
-      <div class="overview__rating-count">429 votes</div>
+      <div class="overview__rating-average">8.6</div>
+      <div class="overview__rating-count">426 votes</div>
     </div>
   </div>
 </template>
