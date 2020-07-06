@@ -30,7 +30,7 @@ export default {
         rel: "stylesheet",
         type: "text/css",
         href:
-          "https://fonts.googleapis.com/css?family=josefin+sans:300,400,400i|Nunito:300,300i"
+          "https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
       }
     ]
   },
