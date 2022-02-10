@@ -19,7 +19,7 @@
     "@nuxt/components": "^0.3.4",
     "@nuxtjs/global-components": "^0.6.1",
     "@nuxtjs/style-resources": "^1.0.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.2"
   }
 }
